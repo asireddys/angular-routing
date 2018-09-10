@@ -1,0 +1,14 @@
+<div class="parent-app">
+  <button (click)="reset()">Reset count</button>
+  <div>
+    <h2>Parent component</h2>
+    <div>
+      count from child:{{pcount}}
+    </div>
+    
+  </div>
+</div>
+<div>{{Message}}</div>
+<app-child [parentcount]="pcount" (change)="updateFromChild($event)">
+    
+ </app-child>

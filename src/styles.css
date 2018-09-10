@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.parent-app {  
+    border: 5px solid #CFF1E1;  
+    border-radius: 10px;  
+    background-color: #D1BFD4;  
+  }  
+  
+  .child-app{  
+    border: 5px solid #CFF1E1;  
+    border-radius: 10px;  
+    background-color: #E4BDD2;  
+    height: 100px;  
+  }  

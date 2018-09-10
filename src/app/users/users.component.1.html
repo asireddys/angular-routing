@@ -1,0 +1,84 @@
+
+<div class="row">
+    <div class="col-sm-6"><h2>Goverance</h2>
+      <table class="table table-bordered table-sm">
+          <thead>
+            <tr>
+              <th>Metric Name</th>
+              <th>Uom</th>
+              <th>Performance</th>
+            </tr>
+          </thead>
+            <tr *ngFor="let b of Display">
+              <td>{{b.Metricname}}</td>
+              <td>{{b.UOM}}</td>
+              <td  [ngClass]="[  b.Performance >='95'? 'class1' : '',   b.Performance <='94'&& b.Performance >='24'? 'class2'
+                : '',b.Performance<='25'? 'class3' : '']">{{b.Performance}}</td>
+            </tr>  
+        </table>
+        <h2>Customer</h2>
+        <table class="table table-bordered table-sm">
+            <thead>
+              <tr>
+                <th>Metric Name</th>
+                <th>Uom</th>
+                <th>Performance</th>
+              </tr>
+            </thead>
+              <tr *ngFor="let c of Report">
+                <td>{{c.Metricname}}</td>
+                <td>{{c.UOM}}</td>
+                <td>{{c.Performance}}</td>
+              </tr>  
+          </table>
+          <h2>People</h2>
+          <table class="table table-bordered table-sm">
+              <thead>
+                <tr>
+                  <th>Metric Name</th>
+                  <th>Uom</th>
+                  <th>Performance</th>
+                </tr>
+              </thead>
+                <tr *ngFor="let d of Redirect">
+                  <td>{{d.Metricname}}</td>
+                  <td>{{d.UOM}}</td>
+                  <td>{{d.Performance}}</td>
+                </tr>  
+            </table>
+      </div>
+    <div class="col-sm-6">
+      <h2>Engineering</h2>
+      <table class="table table-bordered table-sm">
+        <thead>
+          <tr>
+              <th>Metric Name</th>
+              <th>Uom</th>
+              <th>Performance</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let e of Reconnect">
+            <td>{{e.Metricname}}</td>
+            <td>{{e.UOM}}</td>
+            <td>{{e.Performance}}</td>
+          </tr>  
+      </table>
+      <h2>Compliance</h2>
+      <table class="table table-bordered table-sm">
+        <thead>
+          <tr>
+              <th>Metric Name</th>
+              <th>Uom</th>
+              <th>Performance</th>
+          </tr>
+        </thead>
+        <tr *ngFor="let f of Swingconnect">
+            <td>{{f.Metricname}}</td>
+            <td>{{f.UOM}}</td>
+            <td>{{f.Performance}}</td>
+          </tr>  
+      </table>
+    </div>
+   
+  </div>
+ 

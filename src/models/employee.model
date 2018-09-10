@@ -1,0 +1,6 @@
+employee : ramanareddy = [
+    {'Gender:Male'},
+    {'Date of birth:apr6,1994'},
+    {'Phone:8106964958'},
+    {'Department:UI'},
+];

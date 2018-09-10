@@ -1,0 +1,48 @@
+<div class="container-fluid col-sm-12">
+  <h2>Bordered Table</h2>
+  <p>The .table-bordered class adds borders on all sides of the table and the cells:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th rowspan="2">S.no</th>
+        <th rowspan="2">AccountName</th>
+        <th rowspan="2">SBU</th>
+        <th rowspan="2">IBG</th>
+        <th rowspan="2">FTE</th>
+        <th rowspan="2">TOTAL PROJECTS</th>
+        <th colspan="8">RAG</th>
+        <th rowspan="2">Overall Rag</th>
+      </tr>
+        <tr id="rw-child">
+            <th>Governance</th>
+            <th>Engineering</th>
+            <th>Customer</th>
+            <th>People</th>
+            <th>Process</th>
+            <th>Issues</th>
+            <th>Impacts</th>
+            <th>Recommendations</th>
+            </tr>
+    
+      </thead>
+    <tr *ngFor="let a of name">
+        <td>{{a.serial}}</td>
+        <td>{{a.AccountName}}</td>
+        <td>{{a.SBU}}</td>
+        <td>{{a.IBG}}</td>
+        <td>{{a.FTE}}</td>
+        <td>{{a.TotalProjects}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>   
+   
+  </table>
+</div>
